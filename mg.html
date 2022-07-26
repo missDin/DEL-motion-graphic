@@ -4,12 +4,21 @@
             <meta name="viewport" content ="width=device-width,initial-scale=1.0"/>
             <meta charset="utf-8"/>
             <title>DEL works</title>
-            <script type="text/javascript">
-
-            </script>
             <link rel="stylesheet"type="text/css"href="laymg.css"/>
         </head>
-        <body>
+        <script>
+            function test(){
+                var t1 = document.getElementById('loadbg');
+                t1.style.display="none";
+            }
+        </script>
+        <body onload="test()">
+            <div class="loadbg" id="loadbg">
+                <div class="load" id="load">
+                    <div class='loader'></div>
+                    <div class="loadfont">loading...</div>
+                </div>
+            </div>
             <div class="title">
                 <a href="https://missdin.github.io/DEL-motion-graphic/mg.html" class="blink">
                     motion graphic
